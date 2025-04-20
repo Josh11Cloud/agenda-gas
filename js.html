@@ -4,8 +4,8 @@
 function crearTablaContactos(){
     google.script.run.withSuccessHandler(
         function(obj){
-            tabla.id = 'tablaContactos';
             let tabla = document.getElementById('tablaContactos');
+            tabla.id = 'tablaContactos';
             if(tabla) tabla.remove();
             let tablaHeader = document.createElement('thead');
             let tablaBody = document.createElement('tbody');
